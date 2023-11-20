@@ -1,3 +1,6 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+// Import Styles
+
+// App Styles
+@import './settings/all';
+@import './layouts/all';
+@import './components/all';
