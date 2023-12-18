@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       title: 'William Dev',
     },
   },
-  css: ['~/assets/css/main.css', '~/assets/scss/main.scss'],
+  css: ['~/assets/css/main.css', '~/assets/scss/main.scss', '@fortawesome/fontawesome-svg-core/styles.css'],
   postcss: {
     plugins: {
       tailwindcss: {},
