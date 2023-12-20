@@ -1,2 +1,74 @@
 .navbar {
+  &-colapse {
+    display: flex;
+    align-items: flex-end;
+    width: 100%;
+    @media screen and (max-width: 768px) {
+      background-color: $primary;
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 100%;
+      width: 0;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      overflow-x: hidden;
+      transform: translateX(100%);
+      transition: transform 0.4s linear;
+      &.show {
+        width: 100%;
+        display: flex;
+        opacity: 1;
+        transform: translateX(0);
+        @media screen and (max-width: 768px) {
+          .nav-link {
+            color: $white;
+            font-size: 1.3rem;
+            &:hover {
+              color: $dark;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-nav,
+  &-media {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  .nav {
+    &-item {
+      text-align: center;
+      @media screen and (max-width: 768px) {
+        padding: 0.5rem;
+      }
+    }
+    &-link {
+      transition: all 0.2s ease-in-out;
+      font-size: 1.125rem;
+      margin-left: 1.2rem;
+      text-align: center;
+      &:hover {
+        color: $primary;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+      &.close {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+        font-size: 2rem;
+        &:hover {
+          color: $dark;
+        }
+      }
+    }
+  }
 }

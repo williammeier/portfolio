@@ -1,76 +1,64 @@
 <template>
-  <nav class="navbar">
-    <div class="max-w-screen-xl flex flex-wrap items-end justify-between mx-auto p-4">
-      <a href="https://flowbite.com/" class="flex items-center space-x-3 rtl:space-x-reverse">
-        <font-awesome-icon icon="fa-solid fa-code" />
-        <span class="self-center text-3xl font-semibold whitespace-nowrap dark:text-white">William </span>
-      </a>
+  <div>
+    <nav class="navbar">
+      <div class="max-w-screen-xl flex nowrap items-end justify-between mx-auto overflow-hidden p-4">
+        <Logo :style="'text-2xl'" />
+        <div class="navbar-colapse" :class="showNav == true ? 'show' : ''">
+          <!-- Logo -->
+          <Logo :style="'text-3xl md:hidden text-white'" />
 
-      <div class="navbar-nav hidden w-full md:block md:w-auto mx-auto">
-        <ul class="flex flex-col p-4 md:p-0 md:flex-row md:space-x-8 rtl:space-x-reverse">
-          <li>
-            <a href="#" class="nav-link text-base text-dark dark:text-white" aria-current="page">Home</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-base text-dark dark:text-white">About</a>
-          </li>
-          <li>
-            <a href="#" class="nav-link text-base text-dark dark:text-white">Work</a>
-          </li>
-        </ul>
-      </div>
-      <!-- {{ colorMode }} -->
-      <div>
-        <!-- <font-awesome-icon icon="fa-brands fa-twitter-square" />
-        <font-awesome-icon icon="fa-brands fa-github-square" /> -->
-        <button
-          class="btn-theme text-dark"
-          @click="colorMode.preference = 'dark'"
-          v-if="colorMode.preference === 'light'"
-        >
-          <font-awesome-icon icon="fa-solid fa-moon text-primary" />
-        </button>
-        <button
-          class="btn-theme text-yellow-200"
-          @click="colorMode.preference = 'light'"
-          v-if="colorMode.preference === 'dark'"
-        >
-          <font-awesome-icon icon="fa-solid fa-sun text-primary" />
-        </button>
+          <div class="navbar-nav mx-auto mt-5 md-mt-0">
+            <ul class="flex flex-col md:p-0 md:flex-row md:space-x-8">
+              <li class="nav-item">
+                <a href="#" class="nav-link text-dark dark:text-white" aria-current="page">Home</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-dark dark:text-white">About</a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link text-dark dark:text-white">Work</a>
+              </li>
+            </ul>
+          </div>
+          <ul class="navbar-media flex flex-row align-end mt-4 md:mt-0">
+            <li class="nav-item">
+              <a href="https://github.com/williammeier" target="_blank" title="GitHub" class="nav-link">
+                <font-awesome-icon icon="fa-brands fa-github" />
+              </a>
+            </li>
+            <li class="nav-item">
+              <a href="https://www.linkedin.com/in/williammeier01/" target="_blank" title="Linkedin" class="nav-link">
+                <font-awesome-icon icon="fa-brands fa-linkedin" />
+              </a>
+            </li>
+          </ul>
+        </div>
 
-        <button class="ml-3">
-          <font-awesome-icon icon="fa-solid fa-bars" />
-        </button>
+        <div class="navbar-tools">
+          <button class="nav-link" @click="colorMode.preference = 'dark'" v-if="colorMode.preference === 'light'">
+            <font-awesome-icon icon="fa-solid fa-moon" />
+          </button>
+          <button class="nav-link" @click="colorMode.preference = 'light'" v-if="colorMode.preference === 'dark'">
+            <font-awesome-icon icon="fa-solid fa-sun" />
+          </button>
+
+          <button class="nav-link md:hidden" @click="toggleNav">
+            <font-awesome-icon icon="fa-solid fa-bars" />
+          </button>
+          <button class="nav-link close md:hidden" :class="!showNav ? 'hidden' : ''" @click="toggleNav">
+            <font-awesome-icon icon="fa-solid fa-close" />
+          </button>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </div>
 </template>
-
-<style lang="scss">
-.navbar {
-  .nav-link {
-    padding: 0.5rem 0.75rem;
-    &:hover {
-      color: theme('colors.primary');
-    }
-  }
-}
-.btn {
-  &-theme {
-    height: 35px;
-    width: 35px;
-    border-radius: 5px;
-    background-color: lighten(#1f1b1b, 5%);
-  }
-}
-</style>
-
-<style lang="postcss">
-body {
-  @apply min-h-screen bg-white text-dark dark:bg-dark dark:text-white;
-}
-</style>
 
 <script setup>
 const colorMode = useColorMode()
+const showNav = ref(false)
+
+const toggleNav = () => {
+  showNav.value = !showNav.value
+}
 </script>
