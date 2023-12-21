@@ -1,7 +1,7 @@
 <template>
   <div>
     <nav class="navbar">
-      <div class="max-w-screen-xl flex nowrap items-end justify-between mx-auto overflow-hidden p-4">
+      <div class="max-w-screen-xl flex nowrap items-end justify-between mx-auto overflow-hidden py-5">
         <Logo :style="'text-2xl'" />
         <div class="navbar-colapse" :class="showNav == true ? 'show' : ''">
           <!-- Logo -->
