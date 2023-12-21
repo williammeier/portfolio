@@ -24,9 +24,13 @@
         opacity: 1;
         transform: translateX(0);
         @media screen and (max-width: 768px) {
+          .nav-item {
+            margin: 0.5rem;
+          }
           .nav-link {
             color: $white;
             font-size: 1.3rem;
+            margin: 1.2rem 0;
             &:hover {
               color: $dark;
             }
@@ -45,20 +49,13 @@
   .nav {
     &-item {
       text-align: center;
-      @media screen and (max-width: 768px) {
-        padding: 0.5rem;
-      }
     }
     &-link {
       transition: all 0.2s ease-in-out;
       font-size: 1.125rem;
-      margin-left: 1.2rem;
       text-align: center;
       &:hover {
         color: $primary;
-      }
-      &:first-child {
-        margin-left: 0;
       }
       &.close {
         position: absolute;
