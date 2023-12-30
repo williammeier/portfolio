@@ -2,7 +2,7 @@
   <div>
     <nav class="navbar">
       <div class="container mx-auto px-3 md:px-0 flex nowrap items-end justify-between mx-auto py-5">
-        <a href="/" class="text-2xl text-dark dark:text-white font-semibold" :class="style">&lt;>&#xa0;William </a>
+        <a href="/" class="text-2xl text-dark dark:text-white font-semibold">&lt;>&#xa0;William </a>
 
         <div class="navbar-nav" :class="showNav == true ? 'show' : ''">
           <ul class="nav-group mx-auto flex-col md:flex-row md:p-0 md:space-x-16">
