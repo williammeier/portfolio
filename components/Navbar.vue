@@ -2,12 +2,9 @@
   <div>
     <nav class="navbar">
       <div class="container mx-auto px-3 md:px-0 flex nowrap items-end justify-between mx-auto py-5">
-        <Logo :style="'text-2xl'" />
-
-        <!-- <div class="navbar-background" :class="showNav == true ? 'show' : ''"></div> -->
+        <a href="/" class="text-2xl text-dark dark:text-white font-semibold" :class="style">&lt;>&#xa0;William </a>
 
         <div class="navbar-nav" :class="showNav == true ? 'show' : ''">
-          <!-- <Logo :style="'text-3xl md:hidden text-white'" /> -->
           <ul class="nav-group mx-auto flex-col md:flex-row md:p-0 md:space-x-16">
             <li class="nav-item">
               <a href="#" class="nav-link text-dark dark:text-white">Home</a>
