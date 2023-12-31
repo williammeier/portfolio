@@ -1,0 +1,43 @@
+.btn {
+  font-size: 1.15rem;
+  padding: 0.8rem 2rem;
+  border-radius: 6px;
+  position: relative;
+  transition: all 0.2s linear;
+
+  @media screen and (min-width: 768px) {
+    font-size: 1.25rem;
+    padding: 1rem 2.2rem;
+  }
+
+  &:before {
+    content: '';
+    position: absolute;
+
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    border: 1px solid;
+    border-radius: 6px;
+    transform: translate(-6px, -7px);
+    transition: all 0.2s linear;
+  }
+
+  &:hover {
+    &::before {
+      transform: translate(6px, 7px);
+    }
+  }
+
+  &-primary {
+    background-color: $primary;
+    color: $white;
+    &::before {
+      border-color: $white;
+    }
+    &:hover {
+      background-color: darken($primary, 6%);
+    }
+  }
+}
