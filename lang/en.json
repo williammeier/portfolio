@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Home",
+    "about": "About",
+    "work": "Work"
+  },
+  "header": {
+    "name": "Hello, I'm William",
+    "profession": "Web Developer",
+    "location": "based in Brazil",
+    "button": "Resume"
+  }
+}

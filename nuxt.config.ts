@@ -15,10 +15,21 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/i18n'],
   colorMode: {
     classSuffix: '',
-    preference: 'light',
-    fallback: 'light',
+    preference: 'dark',
+    fallback: 'dark',
+  },
+  i18n: {
+    strategy: 'no_prefix',
+    locales: [
+      { code: 'en', file: 'en.json' },
+      { code: 'pt', file: 'pt.json' },
+    ],
+    lazy: true,
+    langDir: 'lang',
+    defaultLocale: 'en',
+    detectBrowserLanguage: false,
   },
 })

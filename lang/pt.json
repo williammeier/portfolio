@@ -1,0 +1,13 @@
+{
+  "nav": {
+    "home": "Início",
+    "about": "Sobre",
+    "work": "Projetos"
+  },
+  "header": {
+    "name": "Olá, eu sou William",
+    "profession": "Desenvolver Web",
+    "location": "morando no Brasil",
+    "button": "Resumo"
+  }
+}
