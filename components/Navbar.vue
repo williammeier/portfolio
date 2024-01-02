@@ -56,9 +56,6 @@
           >
             <span class="nav-toggle-icon"></span>
           </button>
-          <!-- <button class="nav-link close md:hidden" @click="toggleNav" title="Fechar Menu">
-            <font-awesome-icon icon="fa-solid fa-close" />
-          </button> -->
         </div>
       </div>
     </nav>

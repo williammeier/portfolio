@@ -25,19 +25,62 @@
   }
 
   &:hover {
+    transform: translateY(-0.3rem);
+
+    &::after {
+      transform: scaleX(1.5) scaleY(1.6);
+      opacity: 0;
+    }
     &::before {
-      transform: translate(6px, 7px);
+      transform: translate(0, 0);
     }
   }
 
   &-primary {
     background-color: $primary;
     color: $white;
+
     &::before {
-      border-color: $white;
+      border-color: lighten($primary, 20%);
     }
     &:hover {
-      background-color: darken($primary, 6%);
+      box-shadow: 0 1rem 2rem rgba($primary, 0.2);
+      &::before {
+        border-color: $primary;
+      }
+    }
+    &::after {
+      background-color: rgba($primary, 0.5);
+    }
+  }
+
+  &::after {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: all 0.4s;
+  }
+  &--animated {
+    animation: moveInBottom 0.5s ease-out 0.75s;
+    animation-fill-mode: backwards;
+  }
+}
+
+.dark {
+  .btn {
+    &-primary {
+      &::before {
+        border-color: $white;
+      }
+      &:hover::before {
+        border-color: $primary;
+      }
     }
   }
 }
