@@ -2,7 +2,8 @@
   <div>
     <Navbar />
 
-    <HeaderTop />
+    <HeaderSection />
+    <AboutSection />
   </div>
 </template>
 
