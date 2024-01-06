@@ -9,5 +9,9 @@
     "profession": "Web Developer",
     "location": "based in Brazil",
     "button": "Resume"
+  },
+  "about": {
+    "title": "about.",
+    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia, officiis placeat adipisci modi inventore, id vel fuga vitae numquam esse illo quo debitis, at maiores facilis culpa enim similique ducimus tempore praesentium! Possimus beatae doloribus sequi reprehenderit placeat cumque provident animi vitae."
   }
 }

@@ -1,5 +1,38 @@
 .about {
   &-box {
-    max-width: 900px;
+    position: relative;
+    max-width: 950px;
+
+    h3 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 0.7rem;
+    }
+    p {
+      font-size: 1.25rem;
+      line-height: 2.25rem;
+    }
+    &-item {
+      margin-top: 3rem;
+      margin-left: 2rem;
+      position: relative;
+      transition: all 0.2s linear;
+      &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        transform: translate(-1.8rem, 0.7rem);
+        height: 0.8125rem;
+        width: 0.8125rem;
+        background-color: $primary;
+        border-radius: 100px;
+        transition: all 0.2s linear;
+      }
+
+      &:hover {
+        transform: scale(1.03);
+      }
+    }
   }
 }
