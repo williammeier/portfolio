@@ -1,0 +1,41 @@
+.card {
+  @apply bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg;
+
+  transition: all 0.2s linear;
+
+  &-img {
+    overflow: hidden;
+    width: 100%;
+    aspect-ratio: 16/9;
+    img {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      transition: all 0.3s linear;
+    }
+  }
+  &-title {
+    @apply text-primary font-bold text-2xl mb-3;
+
+    transition: all 0.3s linear;
+  }
+
+  &-body {
+    @apply px-6 py-4;
+  }
+  &-stack {
+    @apply px-6 pb-4 text-gray-600 dark:text-gray-200 flex place-items-center;
+  }
+  &-footer {
+    @apply px-6 pb-4 grid grid-cols-2 gap-4;
+  }
+
+  &:hover {
+    .card-img img {
+      transform: scale(1.15);
+    }
+    .card-title {
+      margin-top: 0.8rem;
+    }
+  }
+}

@@ -6,13 +6,41 @@
   padding: 0.1rem 0.5rem;
   margin-right: 0.5rem;
 
+  &-sm {
+    padding: 0.05rem 0.2rem;
+    font-size: 0.6rem;
+    margin-right: 0.2rem;
+    line-height: 1rem;
+  }
+
   &-primary {
     @apply border border-blue-400 bg-blue-100 text-blue-800 dark:bg-gray-700 dark:text-blue-300;
+    &:hover {
+      @apply bg-blue-400 text-white;
+    }
   }
   &-warning {
     @apply border border-yellow-400 bg-yellow-100 text-yellow-800 dark:bg-gray-700 dark:text-yellow-300;
+    &:hover {
+      @apply bg-yellow-400 text-white;
+    }
   }
   &-success {
     @apply border border-green-400 bg-green-100 text-green-800 dark:bg-gray-700 dark:text-green-300;
+    &:hover {
+      @apply bg-green-400 text-white;
+    }
+  }
+  &-danger {
+    @apply border border-red-400 bg-red-100 text-red-800 dark:bg-gray-700 dark:text-red-300;
+    &:hover {
+      @apply bg-red-400 text-white;
+    }
+  }
+  &-purple {
+    @apply border border-purple-400 bg-purple-100 text-purple-800 dark:bg-gray-700 dark:text-purple-300;
+    &:hover {
+      @apply bg-purple-400 text-white;
+    }
   }
 }

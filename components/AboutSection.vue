@@ -3,7 +3,7 @@
     <div class="container mx-auto">
       <h2 class="title">{{ $t('about.title') }}</h2>
 
-      <article class="content-box mt-10 md:mr-8">
+      <article class="content-box md:mr-8">
         <p>
           {{ $t('about.description') }}
         </p>
@@ -16,7 +16,7 @@
             {{ locale === 'en' ? job.description : job.description_pt }}
           </p>
           <div class="flex flex-wrap mt-2">
-            <div
+            <span
               class="badge"
               v-for="(lang, index) in job.languages"
               :key="index"
@@ -25,7 +25,7 @@
             >
               <font-awesome-icon :icon="lang.icon" />
               {{ lang.name }}
-            </div>
+            </span>
           </div>
         </article>
       </div>

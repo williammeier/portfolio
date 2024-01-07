@@ -4,6 +4,7 @@
 
     <HeaderSection />
     <AboutSection />
+    <WorkSection />
   </div>
 </template>
 

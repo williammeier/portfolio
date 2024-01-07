@@ -14,6 +14,11 @@
           "name": "PHP",
           "icon": "fa-brands fa-php",
           "class": "badge-primary"
+        },
+        {
+          "name": "Bootstrap",
+          "icon": "fa-brands fa-bootstrap",
+          "class": "badge-purple"
         }
       ]
     },
@@ -23,9 +28,9 @@
       "description_pt": "Descrição em Português Brasil 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.",
       "languages": [
         {
-          "name": "PHP",
-          "icon": "fa-brands fa-php",
-          "class": "badge-warning"
+          "name": "Laravel",
+          "icon": "fa-brands fa-laravel",
+          "class": "badge-danger"
         },
         {
           "name": "Vue.JS",
