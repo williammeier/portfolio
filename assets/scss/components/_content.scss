@@ -1,4 +1,4 @@
-.about {
+.content {
   &-box {
     position: relative;
     max-width: 950px;
@@ -31,7 +31,9 @@
       }
 
       &:hover {
-        transform: scale(1.03);
+        h3 {
+          color: $primary;
+        }
       }
     }
   }
