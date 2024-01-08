@@ -11,7 +11,7 @@
 
       <div class="content-box mt-20 ml-auto">
         <article class="content-box-item" v-for="(job, index) in jobs" :key="index">
-          <h3>{{ job.title }}</h3>
+          <h3>{{ locale === 'en' ? job.title : job.title_pt }}</h3>
           <p>
             {{ locale === 'en' ? job.description : job.description_pt }}
           </p>
@@ -34,7 +34,7 @@
 </template>
 
 <script setup>
-const { jobs } = await import('~/db/db.json')
+const { jobs } = await import('~/db/jobs.json')
 
 import { useI18n } from 'vue-i18n'
 const { locale, setLocale } = useI18n()

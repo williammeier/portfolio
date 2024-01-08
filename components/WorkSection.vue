@@ -11,33 +11,36 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 mt-20">
-        <div class="card card-projects">
+        <div class="card" v-for="(project, index) in projects" :key="index">
           <div class="card-img">
-            <img
-              class="w-full"
-              src="https://images.unsplash.com/photo-1470770903676-69b98201ea1c?q=80&w=1740&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-              alt=""
-            />
+            <img class="w-full" :src="project.image_path" :alt="locale === 'en' ? project.name : project.name_pt" />
           </div>
           <div class="card-body">
-            <h2 class="card-title">Project Name</h2>
+            <h2 class="card-title">{{ locale === 'en' ? project.name : project.name_pt }}</h2>
 
             <p class="text-lg">
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus quia, nulla! Maiores et perferendis
-              eaque, exercitationem praesentium nihil.
+              {{ locale === 'en' ? project.description : project.description_pt }}
             </p>
           </div>
           <div class="card-stack">
             <span class="text-base mr-1">Tech stack:</span>
-            HTML, Java Script, PHP, Laravel
+            {{ project.stack }}
           </div>
 
           <div class="card-footer">
-            <a href="" class="inline-block rounded text-sm font-semibold hover:text-primary">
+            <a
+              :href="project.preview_url"
+              target="_blank"
+              class="inline-block rounded text-sm font-semibold hover:text-primary"
+            >
               <font-awesome-icon icon="fa-solid fa-link" />
               Live Preview
             </a>
-            <a href="" class="inline-block rounded text-sm font-semibold hover:text-primary">
+            <a
+              :href="project.code_url"
+              target="_blank"
+              class="inline-block rounded text-sm font-semibold hover:text-primary"
+            >
               <font-awesome-icon icon="fa-brands fa-github" />
               View Code
             </a>
@@ -47,3 +50,13 @@
     </div>
   </section>
 </template>
+
+<script setup>
+const { projects } = await import('~/db/projects.json')
+
+import { useI18n } from 'vue-i18n'
+const { locale, setLocale } = useI18n()
+const changeLanguage = (newLocale) => {
+  setLocale(newLocale)
+}
+</script>
