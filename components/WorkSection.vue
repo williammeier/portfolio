@@ -1,5 +1,5 @@
 <template>
-  <section class="work py-28">
+  <section class="work">
     <div class="container mx-auto">
       <h2 class="title">work.</h2>
 
@@ -10,15 +10,15 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-7 mt-20">
-        <div class="card" v-for="(project, index) in projects" :key="index">
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-20">
+        <div class="card" v-for="(project, index) in projects" :key="index" :title="project.name">
           <div class="card-img">
             <img class="w-full" :src="project.image_path" :alt="locale === 'en' ? project.name : project.name_pt" />
           </div>
           <div class="card-body">
             <h2 class="card-title">{{ locale === 'en' ? project.name : project.name_pt }}</h2>
 
-            <p class="text-lg">
+            <p class="leading-6 md:leading-7">
               {{ locale === 'en' ? project.description : project.description_pt }}
             </p>
           </div>

@@ -1,0 +1,36 @@
+.container {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.header,
+.about,
+.work {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  @media screen and (min-width: 992px) {
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+  }
+}
+
+.title {
+  color: $primary;
+  font-size: 4.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  @media screen and (min-width: 768px) {
+    font-size: 5rem;
+  }
+  @media screen and (min-width: 992px) {
+    font-size: 6rem;
+  }
+}
+
+p {
+  font-size: 1rem;
+  line-height: 1.75rem;
+  @media screen and (min-width: 768px) {
+    font-size: 1.25rem;
+    line-height: 2rem;
+  }
+}

@@ -1,6 +1,7 @@
 .card {
   @apply bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg;
 
+  max-width: 500px;
   transition: all 0.2s linear;
 
   &-img {
@@ -24,7 +25,7 @@
     @apply px-6 py-4;
   }
   &-stack {
-    @apply text-sm font-normal text-gray-600 dark:text-gray-200 flex place-items-center px-6 pb-4;
+    @apply text-sm font-normal text-gray-600 dark:text-gray-200 px-6 pb-4;
   }
   &-footer {
     @apply grid grid-cols-2 gap-4 px-6 pb-4;

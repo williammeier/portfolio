@@ -1,5 +1,5 @@
 <template>
-  <section class="about py-28">
+  <section class="about">
     <div class="container mx-auto">
       <h2 class="title">{{ $t('about.title') }}</h2>
 
