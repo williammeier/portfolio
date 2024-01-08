@@ -8,7 +8,9 @@
           <h5 class="text-primary text-lg lg:text-xl font-medium mt-2">{{ $t('header.location') }}</h5>
 
           <div class="mt-12">
-            <a href="" class="btn btn-primary btn--animated">{{ $t('header.button') }}</a>
+            <a href="" class="btn btn-primary btn--animated" :title="$t('header.button')">
+              {{ $t('header.button') }}
+            </a>
           </div>
         </div>
         <div class="flex justify-center px-4 md:px-0 mt-16 md:mt-0">

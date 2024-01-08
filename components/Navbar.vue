@@ -16,6 +16,11 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="#" class="nav-link text-dark dark:text-white" :title="$t('nav.stack')">
+              {{ $t('nav.stack') }}
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="#" class="nav-link text-dark dark:text-white" :title="$t('nav.work')">
               {{ $t('nav.work') }}
             </a>
