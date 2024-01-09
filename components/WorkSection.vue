@@ -33,7 +33,7 @@
               target="_blank"
               class="inline-block rounded text-sm font-semibold hover:text-primary"
             >
-              <font-awesome-icon icon="fa-solid fa-link" />
+              <v-icon icon="mdi-link-variant" size="18" />
               Live Preview
             </a>
             <a
@@ -41,7 +41,7 @@
               target="_blank"
               class="inline-block rounded text-sm font-semibold hover:text-primary"
             >
-              <font-awesome-icon icon="fa-brands fa-github" />
+              <v-icon icon="mdi-github" size="18" />
               View Code
             </a>
           </div>

@@ -29,33 +29,20 @@
         <ul class="nav-group social flex flex-row align-end mt-4 md:mt-0">
           <li class="nav-item mr-4">
             <a href="https://github.com/williammeier" target="_blank" title="GitHub" class="nav-link">
-              <font-awesome-icon icon="fa-brands fa-github" />
+              <v-icon icon="mdi-github" size="20" />
             </a>
           </li>
           <li class="nav-item md:mr-4">
             <a href="https://www.linkedin.com/in/williammeier01/" target="_blank" title="Linkedin" class="nav-link">
-              <font-awesome-icon icon="fa-brands fa-linkedin" />
+              <v-icon icon="mdi-linkedin" size="20" />
             </a>
           </li>
         </ul>
       </div>
 
       <div class="navbar-tools flex">
-        <button
-          class="nav-link mr-4"
-          @click="colorMode.preference = 'dark'"
-          v-if="colorMode.preference === 'light'"
-          title="Light"
-        >
-          <font-awesome-icon icon="fa-solid fa-moon" />
-        </button>
-        <button
-          class="nav-link mr-4"
-          @click="colorMode.preference = 'light'"
-          v-if="colorMode.preference === 'dark'"
-          title="Dark"
-        >
-          <font-awesome-icon icon="fa-solid fa-sun" />
+        <button class="nav-link mr-4" @click="toggleTheme" title="Light/Dark">
+          <v-icon icon="mdi-theme-light-dark" size="20" />
         </button>
         <button class="nav-lang" v-if="locale === 'en'" @click="changeLanguage('pt')" title="English">EN</button>
         <button class="nav-lang" v-if="locale === 'pt'" @click="changeLanguage('en')" title="Português">PT</button>
@@ -73,17 +60,21 @@
 </template>
 
 <script setup>
+// Color Theme
 const colorMode = useColorMode()
-const showNav = ref(false)
+const toggleTheme = () => {
+  colorMode.preference = colorMode.preference === 'light' ? 'dark' : 'light'
+}
 
+// Toggle Nav
+const showNav = ref(false)
 const toggleNav = () => {
   showNav.value = !showNav.value
 }
 
+// Locale
 import { useI18n } from 'vue-i18n'
-
 const { locale, setLocale } = useI18n()
-
 const changeLanguage = (newLocale) => {
   setLocale(newLocale)
 }

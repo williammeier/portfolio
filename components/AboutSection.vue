@@ -23,7 +23,7 @@
               :class="[lang.class]"
               :title="lang.name"
             >
-              <font-awesome-icon :icon="lang.icon" />
+              <v-icon :icon="lang.icon" size="14" />
               {{ lang.name }}
             </span>
           </div>

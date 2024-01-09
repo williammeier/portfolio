@@ -8,14 +8,18 @@ export default defineNuxtConfig({
       title: 'William Dev',
     },
   },
-  css: ['~/assets/css/main.css', '~/assets/scss/main.scss', '@fortawesome/fontawesome-svg-core/styles.css'],
+  css: [
+    '~/assets/css/main.css',
+    '~/assets/scss/main.scss',
+    // '@fortawesome/fontawesome-svg-core/styles.css'
+  ],
   postcss: {
     plugins: {
       tailwindcss: {},
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/i18n'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/i18n', '@invictus.codes/nuxt-vuetify'],
   colorMode: {
     classSuffix: '',
     preference: 'dark',
