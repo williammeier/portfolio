@@ -1,42 +1,60 @@
 .card {
-  @apply bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg;
+  &-project {
+    @apply bg-neutral-100 dark:bg-neutral-800 rounded-lg overflow-hidden shadow-lg;
 
-  max-width: 500px;
-  transition: all 0.2s linear;
+    max-width: 500px;
+    transition: all 0.2s linear;
 
-  &-img {
-    overflow: hidden;
-    width: 100%;
-    aspect-ratio: 16/9;
-    img {
-      height: 100%;
+    .card-img {
+      overflow: hidden;
       width: 100%;
-      object-fit: cover;
-      transition: all 0.3s linear;
-    }
-  }
-  &-title {
-    @apply text-primary font-bold text-2xl mb-3;
-
-    transition: all 0.3s linear;
-  }
-
-  &-body {
-    @apply px-6 py-4;
-  }
-  &-stack {
-    @apply text-sm font-normal text-gray-600 dark:text-gray-200 px-6 pb-4;
-  }
-  &-footer {
-    @apply grid grid-cols-2 gap-4 px-6 pb-4;
-  }
-
-  &:hover {
-    .card-img img {
-      transform: scale(1.15);
+      aspect-ratio: 16/9;
+      img {
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+        transition: all 0.3s linear;
+      }
     }
     .card-title {
-      margin-top: 0.8rem;
+      @apply text-primary font-bold text-2xl mb-3;
+
+      transition: all 0.3s linear;
+    }
+
+    .card-body {
+      @apply px-6 py-4;
+    }
+    .card-stack {
+      @apply text-sm font-normal text-gray-600 dark:text-gray-200 px-6 pb-4;
+    }
+    .card-footer {
+      @apply grid grid-cols-2 gap-4 px-6 pb-4;
+    }
+
+    &:hover {
+      .card-img img {
+        transform: scale(1.15);
+      }
+      .card-title {
+        margin-top: 0.8rem;
+      }
+    }
+  }
+
+  &-stack {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.2s linear;
+    padding: 1rem;
+    border-radius: 0.4rem;
+    i.mdi {
+      font-size: 120px;
+    }
+    &:hover {
+      @apply bg-neutral-800;
+      transform: translateY(-5px);
     }
   }
 }

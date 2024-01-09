@@ -8,17 +8,17 @@
       "languages": [
         {
           "name": "Java Script",
-          "icon": "mdi mdi-language-javascript",
+          "icon": "mdi-language-javascript",
           "class": "badge-warning"
         },
         {
           "name": "PHP",
-          "icon": "mdi mdi-language-php",
+          "icon": "mdi-language-php",
           "class": "badge-primary"
         },
         {
           "name": "Bootstrap",
-          "icon": "mdi mdi-bootstrap",
+          "icon": "mdi-bootstrap",
           "class": "badge-purple"
         }
       ]
@@ -31,12 +31,12 @@
       "languages": [
         {
           "name": "Laravel",
-          "icon": "mdi mdi-laravel",
+          "icon": "mdi-laravel",
           "class": "badge-danger"
         },
         {
           "name": "Vue.JS",
-          "icon": "mdi mdi-vuejs",
+          "icon": "mdi-vuejs",
           "class": "badge-success"
         }
       ]

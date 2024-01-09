@@ -11,7 +11,7 @@
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-20">
-        <div class="card" v-for="(project, index) in projects" :key="index" :title="project.name">
+        <div class="card card-project" v-for="(project, index) in projects" :key="index" :title="project.name">
           <div class="card-img">
             <img class="w-full" :src="project.image_path" :alt="locale === 'en' ? project.name : project.name_pt" />
           </div>

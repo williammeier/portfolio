@@ -1,0 +1,44 @@
+{
+  "stack": [
+    {
+      "name": "Java Script",
+      "icon": "mdi-language-javascript",
+      "color": "#f0db4f"
+    },
+    {
+      "name": "PHP",
+      "icon": "mdi-language-php",
+      "color": "#8993be"
+    },
+    {
+      "name": "Laravel",
+      "icon": "mdi-laravel",
+      "color": "#fb503b"
+    },
+    {
+      "name": "Vue.js",
+      "icon": "mdi-vuejs",
+      "color": "#42b883"
+    },
+    {
+      "name": "Nuxt",
+      "icon": "mdi-nuxt",
+      "color": "#00dc82"
+    },
+    {
+      "name": "Sass",
+      "icon": "mdi-sass",
+      "color": "#cc6699"
+    },
+    {
+      "name": "Bootstrap",
+      "icon": "mdi-bootstrap",
+      "color": "#7210f5"
+    },
+    {
+      "name": "Tailwind",
+      "icon": "mdi-tailwind",
+      "color": "#38bdf8"
+    }
+  ]
+}
