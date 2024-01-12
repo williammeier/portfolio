@@ -72,8 +72,7 @@ const toggleNav = () => {
   showNav.value = !showNav.value
 }
 
-// Locale
-import { useI18n } from 'vue-i18n'
+// Change Language
 const { locale, setLocale } = useI18n()
 const changeLanguage = (newLocale) => {
   setLocale(newLocale)

@@ -39,6 +39,11 @@
       "name": "Tailwind",
       "icon": "mdi-tailwind",
       "color": "#38bdf8"
+    },
+    {
+      "name": "MySQL",
+      "icon": "mdi-database",
+      "color": "#00758f"
     }
   ]
 }

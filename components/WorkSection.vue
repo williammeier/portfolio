@@ -22,7 +22,7 @@
               {{ locale === 'en' ? project.description : project.description_pt }}
             </p>
           </div>
-          <div class="card-stack">
+          <div class="card-project-stack">
             <span class="text-base mr-1">Tech stack:</span>
             {{ project.stack }}
           </div>
@@ -54,9 +54,7 @@
 <script setup>
 const { projects } = await import('~/db/projects.json')
 
-import { useI18n } from 'vue-i18n'
-const { locale, setLocale } = useI18n()
-const changeLanguage = (newLocale) => {
-  setLocale(newLocale)
-}
+const props = defineProps({
+  locale: { type: String },
+})
 </script>

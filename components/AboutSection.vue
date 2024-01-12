@@ -36,9 +36,7 @@
 <script setup>
 const { jobs } = await import('~/db/jobs.json')
 
-import { useI18n } from 'vue-i18n'
-const { locale, setLocale } = useI18n()
-const changeLanguage = (newLocale) => {
-  setLocale(newLocale)
-}
+const props = defineProps({
+  locale: { type: String },
+})
 </script>

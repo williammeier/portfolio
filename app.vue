@@ -1,21 +1,16 @@
 <template>
   <div>
-    <Navbar />
+    <Navbar :locale="locale" :setLocale="setLocale" />
 
     <HeaderSection />
-    <AboutSection />
+    <AboutSection :locale="locale" />
     <StackSection />
-    <WorkSection />
+    <WorkSection :locale="locale" />
     <ContactSection />
   </div>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n'
-
 const { locale, setLocale } = useI18n()
-
-const changeLanguage = (newLocale) => {
-  setLocale(newLocale)
-}
 </script>
