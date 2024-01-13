@@ -15,7 +15,13 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/color-mode', '@nuxtjs/i18n', '@invictus.codes/nuxt-vuetify'],
+  modules: [
+    '@nuxtjs/tailwindcss',
+    '@nuxtjs/color-mode',
+    '@nuxtjs/i18n',
+    '@invictus.codes/nuxt-vuetify',
+    '@vueuse/motion/nuxt',
+  ],
   colorMode: {
     classSuffix: '',
     preference: 'dark',
@@ -31,5 +37,25 @@ export default defineNuxtConfig({
     langDir: 'lang',
     defaultLocale: 'en',
     detectBrowserLanguage: false,
+  },
+  runtimeConfig: {
+    public: {
+      motion: {
+        directives: {
+          'pop-bottom': {
+            initial: {
+              scale: 0,
+              opacity: 0,
+              y: 100,
+            },
+            visible: {
+              scale: 1,
+              opacity: 1,
+              y: 0,
+            },
+          },
+        },
+      },
+    },
   },
 })

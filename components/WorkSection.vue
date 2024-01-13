@@ -1,17 +1,23 @@
 <template>
   <section class="work">
     <div class="container mx-auto">
-      <h2 class="title">work.</h2>
+      <h2 class="title" v-motion-slide-visible-once-left>work.</h2>
 
       <div class="content-box md:mr-8">
-        <p>
+        <p v-motion-slide-visible-once-left>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui
           orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
         </p>
       </div>
 
       <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-20">
-        <div class="card card-project" v-for="(project, index) in projects" :key="index" :title="project.name">
+        <div
+          class="card card-project"
+          v-for="(project, index) in projects"
+          :key="index"
+          :title="project.name"
+          v-motion-slide-visible-once-bottom
+        >
           <div class="card-img">
             <img class="w-full" :src="project.image_path" :alt="locale === 'en' ? project.name : project.name_pt" />
           </div>
