@@ -50,6 +50,7 @@
     transition: all 0.2s linear;
     padding: 1rem;
     border-radius: 0.4rem;
+    position: relative;
     i.mdi {
       font-size: 100px;
       @media screen and (min-width: 768px) {
@@ -57,8 +58,8 @@
       }
     }
     &:hover {
-      @apply bg-neutral-100 dark:bg-neutral-800;
-      transform: translateY(-5px);
+      @apply bg-neutral-200/[.6] dark:bg-neutral-800;
+      transform: translateY(-10px) !important;
     }
   }
 }

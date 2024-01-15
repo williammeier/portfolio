@@ -15,16 +15,18 @@
 }
 
 .title {
-  color: $primary;
+  @apply text-primary font-extrabold mb-4;
   font-size: 4.5rem;
-  font-weight: 800;
-  margin-bottom: 1rem;
   @media screen and (min-width: 768px) {
     font-size: 5rem;
   }
   @media screen and (min-width: 992px) {
     font-size: 6rem;
   }
+}
+
+.subtitle {
+  @apply text-primary text-lg lg:text-xl font-medium;
 }
 
 p {

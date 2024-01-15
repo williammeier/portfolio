@@ -3,9 +3,9 @@
     <div class="container mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-4">
         <div class="flex flex-col justify-center" v-motion-slide-visible-once-left>
-          <h5 class="text-primary text-lg lg:text-xl font-medium">{{ $t('header.name') }}</h5>
+          <h5 class="subtitle">{{ $t('header.name') }}</h5>
           <h2 class="text-6xl md:text-7xl lg:text-8xl font-extrabold">{{ $t('header.profession') }}</h2>
-          <h5 class="text-primary text-lg lg:text-xl font-medium mt-2">{{ $t('header.location') }}</h5>
+          <h5 class="subtitle mt-2">{{ $t('header.location') }}</h5>
 
           <div class="mt-12">
             <a href="" class="btn btn-primary btn--animated" :title="$t('header.button')">
