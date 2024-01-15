@@ -2,46 +2,55 @@
   "stack": [
     {
       "name": "Java Script",
+      "ref": "js",
       "icon": "mdi-language-javascript",
-      "color": "#f0db4f"
+      "color": "#FFD600"
     },
     {
       "name": "PHP",
+      "ref": "php",
       "icon": "mdi-language-php",
       "color": "#8993be"
     },
     {
       "name": "Laravel",
+      "ref": "laravel",
       "icon": "mdi-laravel",
       "color": "#fb503b"
     },
     {
       "name": "Vue.js",
+      "ref": "vuejs",
       "icon": "mdi-vuejs",
       "color": "#42b883"
     },
     {
       "name": "Nuxt",
+      "ref": "nuxt",
       "icon": "mdi-nuxt",
       "color": "#00dc82"
     },
     {
       "name": "Sass",
+      "ref": "sass",
       "icon": "mdi-sass",
       "color": "#cc6699"
     },
     {
       "name": "Bootstrap",
+      "ref": "bootstrap",
       "icon": "mdi-bootstrap",
       "color": "#7210f5"
     },
     {
       "name": "Tailwind",
+      "ref": "tailwind",
       "icon": "mdi-tailwind",
       "color": "#38bdf8"
     },
     {
       "name": "MySQL",
+      "ref": "mysql",
       "icon": "mdi-database",
       "color": "#00758f"
     }

@@ -7,19 +7,13 @@
       "description_pt": "Descrição em Português Brasil 1. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.",
       "languages": [
         {
-          "name": "Java Script",
-          "icon": "mdi-language-javascript",
-          "class": "badge-warning"
+          "ref": "js"
         },
         {
-          "name": "PHP",
-          "icon": "mdi-language-php",
-          "class": "badge-primary"
+          "ref": "php"
         },
         {
-          "name": "Bootstrap",
-          "icon": "mdi-bootstrap",
-          "class": "badge-purple"
+          "ref": "bootstrap"
         }
       ]
     },
@@ -30,14 +24,10 @@
       "description_pt": "Descrição em Português Brasil 2. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.",
       "languages": [
         {
-          "name": "Laravel",
-          "icon": "mdi-laravel",
-          "class": "badge-danger"
+          "ref": "laravel"
         },
         {
-          "name": "Vue.JS",
-          "icon": "mdi-vuejs",
-          "class": "badge-success"
+          "ref": "vuejs"
         }
       ]
     },
@@ -45,7 +35,15 @@
       "title": "2020-Present",
       "title_pt": "2020-Present",
       "description": "Lorem 3 ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.",
-      "description_pt": "Descrição em Português Brasil 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam."
+      "description_pt": "Descrição em Português Brasil 3. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.",
+      "languages": [
+        {
+          "ref": "laravel"
+        },
+        {
+          "ref": "bootstrap"
+        }
+      ]
     }
   ]
 }

@@ -10,7 +10,12 @@
       </article>
 
       <div class="content-box mt-20 ml-auto">
-        <article class="content-box-item" v-for="(job, index) in jobs" :key="index" v-motion-slide-visible-once-right>
+        <article
+          class="content-box-item"
+          v-for="(job, index) in jobsWithStack"
+          :key="index"
+          v-motion-slide-visible-once-right
+        >
           <h3>{{ locale === 'en' ? job.title : job.title_pt }}</h3>
           <p>
             {{ locale === 'en' ? job.description : job.description_pt }}
@@ -20,8 +25,8 @@
               class="badge"
               v-for="(lang, index) in job.languages"
               :key="index"
-              :class="[lang.class]"
               :title="lang.name"
+              :style="getBadgeStyles(lang.color)"
             >
               <v-icon :icon="lang.icon" size="14" />
               {{ lang.name }}
@@ -34,9 +39,38 @@
 </template>
 
 <script setup>
-const { jobs } = await import('~/db/jobs.json')
+const colorMode = useColorMode()
 
 const props = defineProps({
   locale: { type: String },
+})
+
+const { jobs } = await import('~/db/jobs.json')
+const { stack } = await import('~/db/stack.json')
+
+const getBadgeStyles = (colorValue) => {
+  return { color: colorValue, borderColor: colorValue, backgroundColor: `${colorValue}26` }
+}
+
+function invertColor(color) {
+  return `invert(${color})`
+}
+
+const jobsWithStack = computed(() => {
+  if (jobs || Array.isArray(jobs) || stack || Array.isArray(stack)) {
+    return jobs.map((job) => {
+      if (job.languages && job.languages.length > 0) {
+        const languagesWithStack = job.languages.map((lang) => stack.find((tech) => tech.ref === lang.ref))
+        return {
+          ...job,
+          languages: languagesWithStack,
+        }
+      }
+      return {
+        ...job,
+      }
+    })
+  }
+  return
 })
 </script>
