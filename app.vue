@@ -1,5 +1,7 @@
 <template>
   <div>
+    <Loader />
+
     <Navbar :locale="locale" :setLocale="setLocale" />
 
     <HeaderSection />
