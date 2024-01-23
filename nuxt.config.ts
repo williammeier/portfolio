@@ -21,6 +21,7 @@ export default defineNuxtConfig({
     '@nuxtjs/i18n',
     '@invictus.codes/nuxt-vuetify',
     '@vueuse/motion/nuxt',
+    'nuxt-anchorscroll',
   ],
   colorMode: {
     classSuffix: '',

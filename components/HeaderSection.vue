@@ -1,5 +1,5 @@
 <template>
-  <section class="header" ref="target">
+  <section id="header" class="header" ref="target">
     <div class="container mx-auto">
       <div class="grid grid-cols-1 md:grid-cols-2 gap-10 md:gap-4">
         <div class="flex flex-col justify-center" v-motion-slide-visible-once-left>

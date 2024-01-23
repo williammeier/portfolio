@@ -6,24 +6,40 @@
       <div class="navbar-nav" :class="showNav == true ? 'show' : ''">
         <ul class="nav-group mx-auto flex-col md:flex-row md:p-0 md:space-x-16">
           <li class="nav-item">
-            <a href="#" class="nav-link text-dark dark:text-white" :title="$t('nav.home')">
+            <nuxt-link
+              @click="scrollToAnchor('home')"
+              class="nav-link text-dark dark:text-white"
+              :title="$t('nav.home')"
+            >
               {{ $t('nav.home') }}
-            </a>
+            </nuxt-link>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link text-dark dark:text-white" :title="$t('nav.about')">
+            <nuxt-link
+              @click="scrollToAnchor('about')"
+              class="nav-link text-dark dark:text-white"
+              :title="$t('nav.about')"
+            >
               {{ $t('nav.about') }}
-            </a>
+            </nuxt-link>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link text-dark dark:text-white" :title="$t('nav.stack')">
+            <nuxt-link
+              @click="scrollToAnchor('stack')"
+              class="nav-link text-dark dark:text-white"
+              :title="$t('nav.stack')"
+            >
               {{ $t('nav.stack') }}
-            </a>
+            </nuxt-link>
           </li>
           <li class="nav-item">
-            <a href="#" class="nav-link text-dark dark:text-white" :title="$t('nav.work')">
+            <nuxt-link
+              @click="scrollToAnchor('work')"
+              class="nav-link text-dark dark:text-white"
+              :title="$t('nav.work')"
+            >
               {{ $t('nav.work') }}
-            </a>
+            </nuxt-link>
           </li>
         </ul>
         <ul class="nav-group social flex flex-row align-end mt-4 md:mt-0">
@@ -60,6 +76,15 @@
 </template>
 
 <script setup>
+const { scrollToAnchor, scrollToTop } = useAnchorScroll({
+  toTop: {
+    scrollOptions: {
+      behavior: 'smooth',
+      offsetTop: 0,
+    },
+  },
+})
+
 // Color Theme
 const colorMode = useColorMode()
 const toggleTheme = () => {

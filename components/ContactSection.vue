@@ -1,10 +1,10 @@
 <template>
-  <section class="contact">
+  <section id="contact" class="contact">
     <div class="container mx-auto">
       <h2 class="title" v-motion-slide-visible-once-left>contact.</h2>
       <div class="grid grid-cols-1 md:grid-cols-2 gap-7 mt-7">
         <div v-motion-slide-visible-once-left>
-          <img src="~/assets/images/contact.jpeg" alt="" class="w-full" />
+          <img src="~/assets/images/contact.jpg" alt="" class="w-full" />
         </div>
         <div class="mt-7 md:mt-0">
           <p v-motion-slide-visible-once-right>

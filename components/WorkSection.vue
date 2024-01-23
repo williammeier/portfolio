@@ -1,5 +1,5 @@
 <template>
-  <section class="work">
+  <section id="work" class="work">
     <div class="container mx-auto">
       <h2 class="title" v-motion-slide-visible-once-left>work.</h2>
 

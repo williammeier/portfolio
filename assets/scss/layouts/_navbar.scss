@@ -1,4 +1,11 @@
 .navbar {
+  // position: fixed;
+  // top: 0;
+  // left: 0;
+  // width: 100%;
+  // z-index: 1;
+  // @apply bg-neutral-100 dark:bg-dark;
+
   .nav {
     &-group {
       display: flex;
@@ -13,6 +20,7 @@
       font-size: 1.125rem;
       text-align: center;
       position: relative;
+      cursor: pointer;
       &:hover {
         color: $primary;
       }

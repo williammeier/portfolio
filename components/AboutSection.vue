@@ -1,5 +1,5 @@
 <template>
-  <section class="about">
+  <section id="about" class="about">
     <div class="container mx-auto">
       <h2 class="title" v-motion-slide-visible-once-left>{{ $t('about.title') }}</h2>
 
