@@ -25,6 +25,22 @@
   }
 }
 
+.header-title {
+  font-size: 3rem;
+  line-height: 1;
+  @media screen and (min-width: 576px) {
+    font-size: 4rem;
+  }
+  @media screen and (min-width: 768px) {
+    font-size: 4.5rem;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 5.5rem;
+  }
+
+  @apply font-extrabold;
+}
+
 .subtitle {
   @apply text-primary text-lg lg:text-xl font-medium;
 }

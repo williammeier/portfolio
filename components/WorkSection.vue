@@ -1,12 +1,11 @@
 <template>
   <section id="work" class="work">
     <div class="container mx-auto">
-      <h2 class="title" v-motion-slide-visible-once-left>work.</h2>
+      <h2 class="title" v-motion-slide-visible-once-left>{{ $t('work.title') }}</h2>
 
       <div class="content-box md:mr-8">
         <p v-motion-slide-visible-once-left>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui
-          orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam.
+          {{ $t('work.description') }}
         </p>
       </div>
 

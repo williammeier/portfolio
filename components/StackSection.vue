@@ -1,11 +1,11 @@
 <template>
-  <section id="stack" class="skills">
+  <section id="stack" class="skills" v-if="stack && stack.length">
     <div class="container mx-auto">
       <h2 class="title" v-motion-slide-visible-once-left>{{ $t('stack.title') }}</h2>
 
-      <div class="content-box md:mr-8">
+      <div class="content-box md:mr-8" v-if="$t('stack.description')">
         <p v-motion-slide-visible-once-left>
-          {{ stack.description }}
+          {{ $t('stack.description') }}
         </p>
       </div>
 

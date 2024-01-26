@@ -1,13 +1,30 @@
 {
   "nav": {
-    "home": "Início",
+    "home": "Inicio",
     "about": "Sobre",
+    "stack": "Competências",
     "work": "Projetos"
   },
   "header": {
-    "name": "Olá, eu sou William",
-    "profession": "Desenvolver Web",
-    "location": "morando no Brasil",
+    "name": "Olá, Eu sou William",
+    "profession": "Desenvolvedor Web",
+    "location": "Com +2 anos de experiência",
     "button": "Resumo"
+  },
+  "about": {
+    "title": "sobre.",
+    "description": "Com mais de 3 anos de experiência, dedicando este período para o desenvolvimento web full stack com as tecnologias PHP, Laravel, JavaScript e MySQL, além de alguns projetos próprios em Vue.js e Nuxt.js."
+  },
+  "stack": {
+    "title": "competências.",
+    "description": "Linguagens e ferramentas na qual adquiri experiência e conhecimento nesse período como desenvolvedor."
+  },
+  "work": {
+    "title": "projetos.",
+    "description": "Principais projetos desenvolvidos."
+  },
+  "contact": {
+    "title": "contato.",
+    "description": "A fim fechar uma parceria para sua emprega e/ou negócio? Entre em contato e vamos marcar uma conversa."
   }
 }
