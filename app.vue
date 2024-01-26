@@ -9,6 +9,8 @@
     <StackSection />
     <WorkSection :locale="locale" />
     <ContactSection />
+
+    <BackToTop />
   </div>
 </template>
 

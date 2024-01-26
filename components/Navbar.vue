@@ -76,14 +76,7 @@
 </template>
 
 <script setup>
-const { scrollToAnchor, scrollToTop } = useAnchorScroll({
-  toTop: {
-    scrollOptions: {
-      behavior: 'smooth',
-      offsetTop: 0,
-    },
-  },
-})
+const { scrollToAnchor } = useAnchorScroll({})
 
 // Color Theme
 const colorMode = useColorMode()
