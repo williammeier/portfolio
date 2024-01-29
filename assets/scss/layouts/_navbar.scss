@@ -1,11 +1,4 @@
 .navbar {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // z-index: 1;
-  // @apply bg-neutral-100 dark:bg-dark;
-
   &-brand {
     @apply text-2xl text-dark dark:text-white font-semibold;
     display: flex;

@@ -21,7 +21,7 @@
           <p v-html="locale === 'en' ? job.description : job.description_pt"></p>
           <div class="flex flex-wrap mt-2">
             <span
-              class="badge"
+              class="badge my-1"
               v-for="(lang, index) in job.languages"
               :key="index"
               :title="lang.name"
