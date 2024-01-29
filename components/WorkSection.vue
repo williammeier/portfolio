@@ -20,7 +20,7 @@
           <div class="card-img">
             <img
               class="w-full"
-              :src="`_nuxt/assets/img/${project.image_path}`"
+              :src="`/${project.image_path}`"
               :alt="locale === 'en' ? project.name : project.name_pt"
             />
           </div>
