@@ -10,12 +10,12 @@ export default defineNuxtConfig({
         {
           rel: 'icon',
           type: 'image/x-icon',
-          href: '/favicon.icon',
+          href: '/portfolio/favicon.png',
         },
       ],
       script: [
         {
-          innerHTML: `           
+          innerHTML: `                                
             <!-- Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-LY6DRFQSQX"></script>
             <script>
