@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       ],
       script: [
         {
-          innerHTML: `
+          innerHTML: `           
             <!-- Google tag (gtag.js) -->
             <script async src="https://www.googletagmanager.com/gtag/js?id=G-LY6DRFQSQX"></script>
             <script>
@@ -24,7 +24,7 @@ export default defineNuxtConfig({
               gtag('js', new Date());
 
               gtag('config', 'G-LY6DRFQSQX');
-            </script> 
+            </script>
           `,
         },
       ],
