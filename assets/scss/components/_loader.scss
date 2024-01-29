@@ -10,7 +10,7 @@ $colors: $primary, $white, $primary;
   width: 100vw;
 
   @apply bg-neutral-200;
-  z-index: 2;
+  z-index: 10;
 
   display: flex;
   justify-content: center;

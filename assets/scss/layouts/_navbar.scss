@@ -87,6 +87,10 @@
         }
       }
       &.close {
+        position: fixed;
+        z-index: 3;
+        top: 20px;
+        right: 20px;
         .nav-toggle-icon {
           background-color: transparent;
           &::before {
@@ -200,12 +204,19 @@ $menuItems: 5;
         }
         &.social .nav-item .nav-link {
           border-bottom: none;
-          padding: 0.7rem 1.5rem;
+          padding: 0.3rem 0.7rem;
         }
       }
 
       &.show {
+        position: fixed;
         height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 2;
         transition: all 0.3s ease-in, background 0.5s ease-in;
         transition-delay: 0.25s;
 
