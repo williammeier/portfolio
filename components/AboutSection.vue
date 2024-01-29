@@ -17,9 +17,8 @@
           v-motion-slide-visible-once-right
         >
           <h3>{{ locale === 'en' ? job.title : job.title_pt }}</h3>
-          <p>
-            {{ locale === 'en' ? job.description : job.description_pt }}
-          </p>
+          <h4>{{ job.company }} - {{ locale === 'en' ? job.post : job.post_pt }}</h4>
+          <p v-html="locale === 'en' ? job.description : job.description_pt"></p>
           <div class="flex flex-wrap mt-2">
             <span
               class="badge"

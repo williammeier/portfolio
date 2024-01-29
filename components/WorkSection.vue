@@ -18,7 +18,11 @@
           v-motion-slide-visible-once-bottom
         >
           <div class="card-img">
-            <img class="w-full" :src="project.image_path" :alt="locale === 'en' ? project.name : project.name_pt" />
+            <img
+              class="w-full"
+              :src="`_nuxt/assets/img/${project.image_path}`"
+              :alt="locale === 'en' ? project.name : project.name_pt"
+            />
           </div>
           <div class="card-body">
             <h2 class="card-title">{{ locale === 'en' ? project.name : project.name_pt }}</h2>

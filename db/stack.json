@@ -53,6 +53,12 @@
       "ref": "mysql",
       "icon": "mdi-database",
       "color": "#00758f"
+    },
+    {
+      "name": "Git",
+      "ref": "git",
+      "icon": "mdi-git",
+      "color": "#f1502f"
     }
   ]
 }

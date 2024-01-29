@@ -5,7 +5,7 @@
         <div class="flex flex-col justify-center mt-16 lg:mt-0" v-motion-slide-visible-once-left>
           <h5 class="subtitle">{{ $t('header.name') }}</h5>
           <h2 class="header-title">{{ $t('header.profession') }}</h2>
-          <h5 class="subtitle mt-2">{{ $t('header.location') }}</h5>
+          <h5 class="subtitle mt-2">{{ $t('header.description') }}</h5>
 
           <div class="mt-12">
             <a
@@ -19,7 +19,7 @@
           </div>
         </div>
         <div class="flex justify-center px-4 lg:px-0" v-motion-slide-visible-once-right>
-          <img src="~/assets/images/hero.png" class="object-contain" alt="William Meier" />
+          <img src="~/assets/img/hero.png" class="object-contain" alt="William Meier" />
         </div>
       </div>
     </div>

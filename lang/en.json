@@ -8,23 +8,23 @@
   "header": {
     "name": "Hello, I'm William",
     "profession": "Web Developer",
-    "location": "2+ years experience",
+    "description": "2+ years experience",
     "button": "Resume"
   },
   "about": {
     "title": "about.",
-    "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem mollitia, officiis placeat adipisci modi inventore, id vel fuga vitae numquam esse illo quo debitis, at maiores facilis culpa enim similique ducimus tempore praesentium! Possimus beatae doloribus sequi reprehenderit placeat cumque provident animi vitae."
+    "description": "With more than 3 years of experience, dedicating this period to full stack web development with PHP, Laravel, JavaScript and MySQL technologies, in addition to some own projects in Vue.js and Nuxt.js."
   },
   "stack": {
     "title": "stack.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam."
+    "description": "Languages and tools used in more than 3 years working as a web developer."
   },
   "work": {
-    "title": "stack.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam."
+    "title": "work.",
+    "description": "My developed projects"
   },
   "contact": {
     "title": "contact.",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Amet vulputate tristique quam felis. Id phasellus dui orci vulputate consequat nulla proin. Id sit scelerisque neque, proin bibendum diam."
+    "description": "Want to create a website? Get in touch and let's arrange a conversation."
   }
 }

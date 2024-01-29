@@ -8,7 +8,7 @@
   "header": {
     "name": "Olá, Eu sou William",
     "profession": "Desenvolvedor Web",
-    "location": "Com +2 anos de experiência",
+    "description": "Com +2 anos de experiência",
     "button": "Resumo"
   },
   "about": {
@@ -17,14 +17,14 @@
   },
   "stack": {
     "title": "competências.",
-    "description": "Linguagens e ferramentas na qual adquiri experiência e conhecimento nesse período como desenvolvedor."
+    "description": "Linguagens e ferramentas utilizadas nesses mais de 3 anos trabalhando como desenvolvedor web."
   },
   "work": {
     "title": "projetos.",
-    "description": "Principais projetos desenvolvidos."
+    "description": "Meus projetos desenvolvidos."
   },
   "contact": {
     "title": "contato.",
-    "description": "A fim fechar uma parceria para sua emprega e/ou negócio? Entre em contato e vamos marcar uma conversa."
+    "description": "A fim criar um site? Entre em contato e vamos marcar uma conversa."
   }
 }
