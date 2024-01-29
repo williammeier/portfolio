@@ -8,14 +8,9 @@
           <h5 class="subtitle mt-2">{{ $t('header.description') }}</h5>
 
           <div class="mt-12">
-            <a
-              href=""
-              class="btn btn-primary btn--animated"
-              :title="$t('header.button')"
-              @click="scrollToAnchor('about')"
-            >
+            <button class="btn btn-primary btn--animated" :title="$t('header.button')" @click="scrollToAnchor('about')">
               {{ $t('header.button') }}
-            </a>
+            </button>
           </div>
         </div>
         <div class="flex justify-center px-4 lg:px-0" v-motion-slide-visible-once-right>
