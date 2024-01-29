@@ -8,7 +8,7 @@ export default defineNuxtConfig({
       title: 'William Dev',
     },
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
-    baseURL: '/portfolio/', // baseURL: '/<repository>/'
+    baseURL: '/portfolio', // baseURL: '/<repository>/'
     buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
   },
   css: ['~/assets/css/main.css', '~/assets/scss/main.scss'],
