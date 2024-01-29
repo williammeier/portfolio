@@ -7,6 +7,8 @@ export default defineNuxtConfig({
       viewport: 'width=device-width, initial-scale=1',
       title: 'William Dev',
     },
+    baseURL: '/portfolio/', // baseURL: '/<repository>/'
+    buildAssetsDir: 'assets', // don't use "_" at the begining of the folder name to avoids nojkill conflict
   },
   css: ['~/assets/css/main.css', '~/assets/scss/main.scss'],
   postcss: {
