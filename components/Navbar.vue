@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="container mx-auto flex nowrap items-end justify-between mx-auto py-5">
-      <a href="/" class="text-2xl text-dark dark:text-white font-semibold">&lt;>&#xa0;William </a>
+      <a href="/" class="navbar-brand" title="William Dev"><img src="/logo.png" /> William </a>
 
       <div class="navbar-nav" :class="showNav == true ? 'show' : ''">
         <ul class="nav-group mx-auto flex-col md:flex-row md:p-0 md:space-x-16">

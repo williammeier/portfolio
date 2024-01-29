@@ -6,6 +6,17 @@
   // z-index: 1;
   // @apply bg-neutral-100 dark:bg-dark;
 
+  &-brand {
+    @apply text-2xl text-dark dark:text-white font-semibold;
+    display: flex;
+    img {
+      height: 30px;
+      max-width: 100%;
+      object-fit: contain;
+      margin-right: 0.4rem;
+    }
+  }
+
   .nav {
     &-group {
       display: flex;
