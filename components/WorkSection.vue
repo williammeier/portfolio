@@ -1,7 +1,9 @@
 <template>
   <section id="work" class="work">
     <div class="container mx-auto">
-      <h2 class="title" v-motion-slide-visible-once-left>{{ $t('work.title') }}</h2>
+      <h2 class="title" v-motion-slide-visible-once-left>
+        {{ $t('work.title') }}
+      </h2>
 
       <div class="content-box md:mr-8">
         <p v-motion-slide-visible-once-left>
@@ -25,10 +27,14 @@
             />
           </div>
           <div class="card-body">
-            <h2 class="card-title">{{ locale === 'en' ? project.name : project.name_pt }}</h2>
+            <h2 class="card-title">
+              {{ locale === 'en' ? project.name : project.name_pt }}
+            </h2>
 
-            <p class="leading-6 md:leading-7">
-              {{ locale === 'en' ? project.description : project.description_pt }}
+            <p class="leading-6 text-lg md:leading-7">
+              {{
+                locale === 'en' ? project.description : project.description_pt
+              }}
             </p>
           </div>
           <div class="card-project-stack">
