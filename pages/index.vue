@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="xl:px-5">
     <Loader />
 
     <Navbar :locale="locale" :setLocale="setLocale" />
