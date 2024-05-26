@@ -8,7 +8,8 @@
     .card-img {
       overflow: hidden;
       width: 100%;
-      aspect-ratio: 4/3;
+      aspect-ratio: 16/9;
+      object-position: top center;
       img {
         height: 100%;
         width: 100%;
@@ -51,6 +52,7 @@
     padding: 1rem;
     border-radius: 0.4rem;
     position: relative;
+
     i.mdi {
       font-size: 100px;
       @media screen and (min-width: 768px) {
