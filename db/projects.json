@@ -26,7 +26,7 @@
       "description": "Responsive page to list and seel homes.",
       "description_pt": "Página responsiva para listagem e visualização de casas.",
       "image_path": "projects/nexter.png",
-      "stack": "HTML, Sass",
+      "stack": "HTML, Css",
       "preview_url": "https://williammeier.github.io/nexter/",
       "code_url": "https://github.com/williammeier/nexter"
     },
