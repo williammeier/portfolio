@@ -71,7 +71,7 @@ Feel free to reach out to me via email at [williammeier@outlook.com](mailto:will
 
 ## View portfolio
 
-You can view this portfolio on GitHub [here](https://williammeier.github.io/portfolio).
+You can view this portfolio [here](https://williammeier.github.io/portfolio).
 
 ---
 
