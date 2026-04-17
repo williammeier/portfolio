@@ -10,6 +10,22 @@ module.exports = {
   ],
   theme: {
     extend: {
+      container: {
+        center: true, // Centers the container automatically
+        padding: {
+          DEFAULT: '1rem', // Default padding for mobile
+          sm: '2rem', // Custom padding for sm breakpoint
+          lg: '4rem', // Custom padding for lg breakpoint
+        },
+        // Optionally override max-widths for specific screens
+        screens: {
+          sm: '600px',
+          md: '728px',
+          lg: '984px',
+          xl: '1200px',
+          '2xl': '1300px',
+        },
+      },
       colors: {
         primary: '#13b4be',
         dark: '#121010',
