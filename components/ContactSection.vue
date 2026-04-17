@@ -14,7 +14,7 @@
           />
         </div>
         <div class="space-y-12">
-          <p class="text-2xl font-medium leading-relaxed opacity-80" v-motion-slide-visible-once-left>
+          <p class="text-xl font-medium leading-relaxed opacity-80" v-motion-slide-visible-once-left>
             {{ $t('contact.description') }}
           </p>
           <div class="grid grid-cols-1 gap-6">
@@ -55,7 +55,7 @@
                   class="transition-all opacity-50 group-hover:opacity-100 group-hover:text-primary"
                 />
                 <span
-                  class="text-lg font-bold tracking-tight transition-all border-b border-primary/0 group-hover:border-primary/40"
+                  class="text-lg font-semibold tracking-tight transition-all border-b border-primary/0 group-hover:border-primary/40"
                   >{{ link.text }}</span
                 >
               </a>

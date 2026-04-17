@@ -1,30 +1,30 @@
 {
   "nav": {
     "home": "Home",
-    "about": "About",
-    "stack": "Stack",
-    "work": "Work"
+    "about": "Experience",
+    "stack": "Technologies",
+    "work": "Curated Work"
   },
   "header": {
-    "name": "Hello, I'm William",
-    "profession": "Web Developer",
-    "description": "3+ years experience",
-    "button": "Resume"
+    "name": "I'm William Meier",
+    "profession": "Full Stack Developer",
+    "description": "Full Stack Developer with 5+ years of experience building robust and scalable web applications — from back-end to front-end — specializing in PHP/Laravel.",
+    "button": "View Experience"
   },
   "about": {
-    "title": "about.",
-    "description": "I am a Full Stack PHP Developer with solid experience in web development. Over the past years, I have been building and refining my skills in various technologies, with a special focus on PHP and Laravel. My journey includes significant contributions in projects, ranging from their conception to implementation."
+    "title": "experience.",
+    "description": "I specialize in building high-performance, scalable web systems. With a core focus on the PHP ecosystem and Laravel, I lead the entire development lifecycle—from initial system architecture to final deployment—ensuring precision, performance, and modern standards in every line of code."
   },
   "stack": {
-    "title": "stack.",
-    "description": "Languages and tools used in more than 3 years working as a web developer."
+    "title": "technologies.",
+    "description": "A curated selection of tools and frameworks I leverage to solve complex problems and build modern software."
   },
   "work": {
-    "title": "work.",
-    "description": "My developed projects"
+    "title": "curated work.",
+    "description": "A showcase of technical explorations, professional projects, and architectural solutions."
   },
   "contact": {
-    "title": "contact.",
-    "description": "Want to create a website? Get in touch and let's arrange a conversation."
+    "title": "get in touch.",
+    "description": "Looking for a technical professional or want to collaborate on a new project? Let's connect."
   }
 }

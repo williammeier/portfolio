@@ -6,7 +6,7 @@
       </h2>
 
       <div class="max-w-3xl mb-24">
-        <p class="text-xl leading-relaxed" v-motion-slide-visible-once-left>
+        <p class="text-lg leading-relaxed" v-motion-slide-visible-once-left>
           {{ $t('work.description') }}
         </p>
       </div>

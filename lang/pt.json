@@ -1,30 +1,30 @@
 {
   "nav": {
-    "home": "Inicio",
-    "about": "Sobre",
-    "stack": "Competências",
+    "home": "Início",
+    "about": "Experiência",
+    "stack": "Tecnologias",
     "work": "Projetos"
   },
   "header": {
-    "name": "Olá, Eu sou William",
-    "profession": "Desenvolvedor Web",
-    "description": "Com +3 anos de experiência",
-    "button": "Resumo"
+    "name": "Sou William Meier",
+    "profession": "Desenvolvedor Full Stack",
+    "description": "Desenvolvedor Full Stack com mais de 5 anos de experiência criando aplicações web robustas e escaláveis — do back-end ao front-end — com foco em PHP/Laravel.",
+    "button": "Ver Experiência"
   },
   "about": {
-    "title": "sobre.",
-    "description": "Desenvolvedor Full Stack PHP com experiência sólida em desenvolvimento de sites e sistemas web. Ao longo dos últimos anos, venho construindo e aprimorando habilidades em diversas tecnologias, com foco especial em PHP e Laravel. Minha jornada inclui contribuições significativas em vários projetos, que vão desde a sua concepção até a sua implementação."
+    "title": "experiência.",
+    "description": "Especialista em construir sistemas web escaláveis e de alta performance. Com foco central no ecossistema PHP e Laravel, gerencio todo o ciclo de vida do desenvolvimento — da arquitetura inicial ao deploy final — garantindo precisão, desempenho e padrões modernos em cada linha de código."
   },
   "stack": {
-    "title": "competências.",
-    "description": "Linguagens e ferramentas utilizadas nesses mais de 3 anos trabalhando como desenvolvedor web."
+    "title": "tecnologias.",
+    "description": "Uma seleção de ferramentas e frameworks que utilizo para resolver problemas complexos e construir software moderno."
   },
   "work": {
     "title": "projetos.",
-    "description": "Meus projetos desenvolvidos."
+    "description": "Uma vitrine de explorações técnicas, projetos profissionais e soluções arquiteturais."
   },
   "contact": {
     "title": "contato.",
-    "description": "A fim criar um site? Entre em contato e vamos marcar uma conversa."
+    "description": "Procurando um profissional técnico ou quer colaborar em um novo projeto? Vamos conversar."
   }
 }

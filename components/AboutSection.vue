@@ -4,28 +4,28 @@
       <h2 class="title" v-motion-slide-visible-once-left>{{ $t('about.title') }}</h2>
 
       <article class="max-w-3xl mb-24">
-        <p class="text-xl leading-relaxed" v-motion-slide-visible-once-left>
+        <p class="text-lg leading-relaxed" v-motion-slide-visible-once-left>
           {{ $t('about.description') }}
         </p>
       </article>
 
-      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+      <div class="grid grid-cols-1 gap-12 md:grid-cols-2">
         <article
-          class="p-8 border-l-2 border-primary/20 hover:border-primary transition-colors bg-white/5 dark:bg-white/5 rounded-r-lg"
+          class="p-8 transition-colors border-l-2 rounded-r-lg border-primary/20 hover:border-primary bg-white/5 dark:bg-white/5"
           v-for="(job, index) in jobsWithStack"
           :key="index"
           v-motion-slide-visible-once-bottom
         >
-          <span class="text-xs font-black tracking-widest text-primary uppercase mb-4 block">
+          <span class="block mb-4 text-xs font-black tracking-widest uppercase text-primary">
             {{ locale === 'en' ? job.title : job.title_pt }}
           </span>
-          <h3 class="text-2xl font-black mb-1 uppercase tracking-tight">
+          <h3 class="mb-1 text-2xl font-black tracking-tight uppercase">
             {{ job.company }}
           </h3>
-          <h4 class="text-sm font-bold opacity-60 uppercase tracking-widest mb-6">
+          <h4 class="mb-6 text-sm font-bold tracking-widest uppercase opacity-60">
             {{ locale === 'en' ? job.post : job.post_pt }}
           </h4>
-          <p class="text-base opacity-80 mb-8" v-html="locale === 'en' ? job.description : job.description_pt"></p>
+          <p class="mb-8 text-base opacity-80" v-html="locale === 'en' ? job.description : job.description_pt"></p>
           <div class="flex flex-wrap gap-2">
             <span
               class="px-3 py-1 text-[10px] font-black uppercase tracking-wider border rounded"
