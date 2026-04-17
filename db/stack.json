@@ -1,12 +1,6 @@
 {
   "stack": [
     {
-      "name": "Java Script",
-      "ref": "js",
-      "icon": "mdi-language-javascript",
-      "color": "#FFD600"
-    },
-    {
       "name": "PHP",
       "ref": "php",
       "icon": "mdi-language-php",
@@ -17,6 +11,12 @@
       "ref": "laravel",
       "icon": "mdi-laravel",
       "color": "#fb503b"
+    },
+    {
+      "name": "Java Script",
+      "ref": "js",
+      "icon": "mdi-language-javascript",
+      "color": "#FFD600"
     },
     {
       "name": "Vue.js",
@@ -31,6 +31,18 @@
       "color": "#00dc82"
     },
     {
+      "name": "React",
+      "ref": "react",
+      "icon": "mdi-react",
+      "color": "#08d7fe"
+    },
+    {
+      "name": "Tailwind",
+      "ref": "tailwind",
+      "icon": "mdi-tailwind",
+      "color": "#38bdf8"
+    },
+    {
       "name": "Sass",
       "ref": "sass",
       "icon": "mdi-sass",
@@ -41,12 +53,6 @@
       "ref": "bootstrap",
       "icon": "mdi-bootstrap",
       "color": "#7210f5"
-    },
-    {
-      "name": "Tailwind",
-      "ref": "tailwind",
-      "icon": "mdi-tailwind",
-      "color": "#38bdf8"
     },
     {
       "name": "MySQL",

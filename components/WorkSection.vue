@@ -11,7 +11,7 @@
         </p>
       </div>
 
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mt-20">
+      <div class="grid grid-cols-1 mt-20 sm:grid-cols-2 lg:grid-cols-3 gap-7">
         <div
           class="card card-project"
           v-for="(project, index) in projects"
@@ -31,14 +31,12 @@
               {{ locale === 'en' ? project.name : project.name_pt }}
             </h2>
 
-            <p class="leading-6 text-lg md:leading-7">
-              {{
-                locale === 'en' ? project.description : project.description_pt
-              }}
+            <p class="text-lg leading-6 md:leading-7">
+              {{ locale === 'en' ? project.description : project.description_pt }}
             </p>
           </div>
           <div class="card-project-stack">
-            <span class="text-base mr-1">Tech stack:</span>
+            <span class="mr-1 text-base">Tech stack:</span>
             {{ project.stack }}
           </div>
 
@@ -46,7 +44,8 @@
             <a
               :href="project.preview_url"
               target="_blank"
-              class="inline-block rounded text-sm font-semibold hover:text-primary"
+              v-if="project.preview_url"
+              class="inline-block text-sm font-semibold rounded hover:text-primary"
             >
               <v-icon icon="mdi-link-variant" size="18" />
               Live Preview
@@ -54,7 +53,8 @@
             <a
               :href="project.code_url"
               target="_blank"
-              class="inline-block rounded text-sm font-semibold hover:text-primary"
+              v-if="project.code_url"
+              class="inline-block text-sm font-semibold rounded hover:text-primary"
             >
               <v-icon icon="mdi-github" size="18" />
               View Code
