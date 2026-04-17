@@ -1,3 +1,20 @@
+// Primary Brand
 $primary: #13b4be;
-$dark: #1f1b1b;
+
+// Dark Theme Surfaces
+$bg-0: #121010; // Darkest Ink (Deep Foundation)
+$bg-1: #1a1818; // Elevated Surface (Sections, Cards)
+$bg-2: #242121; // Active Surface (Inputs, Hover states)
+
+// Light Theme Surfaces
+$light-bg-0: #f8f9fa; // Parchment
+$light-bg-1: #ffffff; // White Surface
+$light-bg-2: #eef1f3; // Active Surface
+
+// Borders
+$border-subtle: rgba($primary, 0.12);
+$border-muted: rgba($primary, 0.05);
+
+// Functional colors
+$dark: $bg-0;
 $white: #ffffff;

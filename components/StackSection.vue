@@ -9,15 +9,15 @@
         </p>
       </div>
 
-      <div class="flex flex-wrap gap-6 sm:gap-12 mt-10">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-4 mt-16">
         <div
-          class="card card-stack"
+          class="card-stack"
           v-for="lang in stack"
+          :key="lang.ref"
           :title="lang.name"
-          :style="{ color: lang.color }"
-          v-motion-slide-visible-once-right
+          v-motion-slide-visible-once-bottom
         >
-          <v-icon :icon="lang.icon" />
+          <v-icon :icon="lang.icon" :style="{ color: lang.color }" />
           <h3>{{ lang.name }}</h3>
         </div>
       </div>

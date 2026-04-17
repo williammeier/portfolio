@@ -22,6 +22,12 @@
           "ref": "mysql"
         },
         {
+          "ref": "vuejs"
+        },
+        {
+          "ref": "tailwind"
+        },
+        {
           "ref": "sass"
         },
         {

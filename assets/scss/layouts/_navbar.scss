@@ -1,229 +1,132 @@
 .navbar {
+  @apply fixed top-0 left-0 right-0 z-50 transition-all duration-300;
+  backdrop-filter: blur(12px);
+  background-color: rgba($light-bg-0, 0.8);
+  border-bottom: 1px solid rgba($primary, 0.08);
+
+  .dark & {
+    background-color: rgba($bg-0, 0.8);
+    border-bottom: 1px solid rgba($primary, 0.12);
+  }
+
   &-brand {
-    @apply text-2xl text-dark dark:text-white font-semibold;
+    @apply text-xl text-dark dark:text-white font-black tracking-tighter uppercase;
     display: flex;
+    align-items: center;
     img {
-      height: 30px;
-      max-width: 100%;
-      object-fit: contain;
-      margin-right: 0.4rem;
+      height: 24px;
+      margin-right: 0.75rem;
+    }
+  }
+
+  &-nav {
+    @apply hidden md:flex items-center space-x-12;
+
+    .nav-group {
+      @apply flex items-center;
+
+      &.main-nav {
+        @apply space-x-10;
+      }
+
+      &.social-nav {
+        @apply space-x-4 border-l border-primary/20 ml-10 pl-10;
+      }
     }
   }
 
   .nav {
-    &-group {
-      display: flex;
-      align-items: flex-end;
-      justify-content: space-between;
-    }
     &-item {
-      text-align: center;
+      @apply flex items-center;
     }
     &-link {
-      transition: all 0.2s ease-in-out;
-      font-size: 1.125rem;
-      text-align: center;
-      position: relative;
+      @apply text-sm font-bold tracking-widest uppercase opacity-60 transition-all duration-200;
       cursor: pointer;
       &:hover {
-        color: $primary;
+        @apply opacity-100 text-primary;
       }
     }
     &-lang {
-      width: 20px;
-      text-align: center;
+      @apply text-sm font-bold tracking-widest opacity-60 hover:opacity-100 transition-opacity cursor-pointer border border-current rounded px-1.5 py-0.5 ml-4;
     }
-    &-toggle {
-      position: relative;
-      z-index: 2;
-      height: 1.7rem;
-      width: 1.7rem;
-      box-shadow: $primary;
-      text-align: center;
-      cursor: pointer;
+  }
+
+  &-tools {
+    @apply flex items-center;
+
+    .nav-tool-btn {
+      @apply opacity-60 hover:opacity-100 hover:text-primary transition-all ml-4;
+    }
+  }
+
+  .nav-toggle {
+    display: none; // Hidden by default on desktop
+
+    @media screen and (max-width: 768px) {
+      @apply relative z-[70] h-10 w-10 flex items-center justify-center ml-4;
 
       &-icon {
-        position: relative;
-        transform: translateY(-6px);
-        &,
-        &::before,
-        &::after {
-          width: 1.4rem;
-          height: 1px;
-          background-color: $white;
-          display: inline-block;
-        }
+        @apply bg-dark dark:bg-white relative;
+        width: 1.25rem;
+        height: 2px;
+        transition: all 0.3s;
 
         &::before,
         &::after {
           content: '';
-          position: absolute;
+          @apply bg-dark dark:bg-white absolute;
+          width: 1.25rem;
+          height: 2px;
           left: 0;
           transition: all 0.3s;
         }
 
         &::before {
-          top: -0.45rem;
+          top: -6px;
         }
         &::after {
-          top: 0.45rem;
+          top: 6px;
         }
       }
-      &:hover {
-        .nav-toggle-icon {
-          &::before {
-            top: -0.5rem;
-          }
-          &::after {
-            top: 0.5rem;
-          }
-        }
-      }
+
       &.close {
-        position: fixed;
-        z-index: 3;
-        top: 20px;
-        right: 20px;
         .nav-toggle-icon {
           background-color: transparent;
           &::before {
             top: 0;
-            transform: rotate(135deg);
+            transform: rotate(45deg);
           }
           &::after {
             top: 0;
-            transform: rotate(-135deg);
+            transform: rotate(-45deg);
           }
         }
       }
     }
   }
-
-  &-nav {
-    display: flex;
-    align-items: flex-end;
-    width: 100%;
-  }
 }
 
-.light {
-  .navbar .nav-toggle {
-    .nav-toggle-icon {
-      &,
-      &::before,
-      &::after {
-        background-color: $dark;
-      }
-    }
-    &.close {
-      .nav-toggle-icon {
-        background-color: transparent;
-        &::before,
-        &::after {
-          background-color: $white;
-        }
-      }
-    }
-  }
-}
-
-// Responsive Navbar
-$menuItems: 5;
 @media screen and (max-width: 768px) {
-  .navbar {
-    &-nav {
-      position: absolute;
-      background-color: $primary;
-      top: 0;
-      left: 0;
-      overflow: hidden;
-      transition: all 0.5s ease-out, background 1s ease-out;
-      transition-delay: 0.2s;
-      z-index: 1;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      width: 100%;
-      height: 0;
+  .navbar-nav {
+    @apply fixed inset-0 flex-col items-center justify-center opacity-0 pointer-events-none;
+    background-color: $bg-0;
+    z-index: 60;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
 
-      .nav-group {
-        position: relative;
-        align-items: center;
-        padding: 0px 48px 0;
-        list-style: none;
+    &.show {
+      @apply opacity-100 pointer-events-auto flex h-screen;
+    }
 
-        .nav-item {
-          margin-top: 5px;
-          transform: scale(1.15) translateY(-30px);
-          opacity: 0;
-          transition: transform 0.5s cubic-bezier(0.4, 0.01, 0.165, 0.99),
-            opacity 0.6s cubic-bezier(0.4, 0.01, 0.165, 0.99);
-          text-align: center;
+    .nav-group {
+      @apply flex-col items-center space-y-8 space-x-0 ml-0 pl-0 border-0;
 
-          @for $i from 1 through 5 {
-            &:nth-child(#{$i}) {
-              transition-delay: #{0.56 - ($i * 0.07)}s;
-            }
-          }
-          .nav-link {
-            display: inline-block;
-            position: relative;
-            text-align: center;
-            color: $white;
-            text-decoration: none;
-            font-size: 1.5rem;
-            width: 100%;
-            border-bottom: 1px solid $white;
-
-            padding: 0.8rem 2rem;
-            color: $white;
-            text-decoration: none;
-            text-transform: uppercase;
-            background-image: linear-gradient(120deg, transparent 0%, transparent 50%, #fff 50%);
-            background-size: 300%;
-            transition: all 0.4s;
-
-            span {
-              margin-right: 1.5rem;
-              display: inline-block;
-            }
-            &:hover,
-            &:active {
-              background-position: 100%;
-              color: $primary;
-            }
-          }
-        }
-        &.social .nav-item .nav-link {
-          border-bottom: none;
-          padding: 0.3rem 0.7rem;
-        }
+      &.social-nav {
+        @apply mt-16 flex-row space-y-0 space-x-12 ml-0 border-0;
       }
 
-      &.show {
-        position: fixed;
-        height: 100%;
-        width: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        z-index: 2;
-        transition: all 0.3s ease-in, background 0.5s ease-in;
-        transition-delay: 0.25s;
-
-        .nav-group {
-          .nav-item {
-            transform: scale(1) translateY(0px);
-            opacity: 1;
-            @for $i from 1 through $menuItems {
-              &:nth-child(#{$i}) {
-                transition-delay: #{0.07 * $i + 0.5}s;
-              }
-            }
-          }
-        }
+      .nav-link {
+        @apply text-5xl font-black text-white opacity-100;
+        letter-spacing: -0.02em;
       }
     }
   }

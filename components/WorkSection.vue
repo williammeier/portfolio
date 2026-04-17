@@ -5,15 +5,15 @@
         {{ $t('work.title') }}
       </h2>
 
-      <div class="content-box md:mr-8">
-        <p v-motion-slide-visible-once-left>
+      <div class="max-w-3xl mb-24">
+        <p class="text-xl leading-relaxed" v-motion-slide-visible-once-left>
           {{ $t('work.description') }}
         </p>
       </div>
 
-      <div class="grid grid-cols-1 mt-20 sm:grid-cols-2 lg:grid-cols-3 gap-7">
+      <div class="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-3">
         <div
-          class="card card-project"
+          class="card card-project group"
           v-for="(project, index) in projects"
           :key="index"
           :title="project.name"
@@ -21,7 +21,7 @@
         >
           <div class="card-img">
             <img
-              class="w-full"
+              class="w-full group-hover:group-hover:grayscale-0"
               :src="`/portfolio/${project.image_path}`"
               :alt="locale === 'en' ? project.name : project.name_pt"
             />
@@ -31,7 +31,7 @@
               {{ locale === 'en' ? project.name : project.name_pt }}
             </h2>
 
-            <p class="text-lg leading-6 md:leading-7">
+            <p class="text-base leading-6 md:leading-7">
               {{ locale === 'en' ? project.description : project.description_pt }}
             </p>
           </div>

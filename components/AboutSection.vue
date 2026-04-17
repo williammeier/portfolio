@@ -3,31 +3,36 @@
     <div class="container mx-auto">
       <h2 class="title" v-motion-slide-visible-once-left>{{ $t('about.title') }}</h2>
 
-      <article class="content-box md:mr-8">
-        <p v-motion-slide-visible-once-left>
+      <article class="max-w-3xl mb-24">
+        <p class="text-xl leading-relaxed" v-motion-slide-visible-once-left>
           {{ $t('about.description') }}
         </p>
       </article>
 
-      <div class="content-box mt-20 ml-auto">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
         <article
-          class="content-box-item"
+          class="p-8 border-l-2 border-primary/20 hover:border-primary transition-colors bg-white/5 dark:bg-white/5 rounded-r-lg"
           v-for="(job, index) in jobsWithStack"
           :key="index"
-          v-motion-slide-visible-once-right
+          v-motion-slide-visible-once-bottom
         >
-          <h3>{{ locale === 'en' ? job.title : job.title_pt }}</h3>
-          <h4>{{ job.company }} - {{ locale === 'en' ? job.post : job.post_pt }}</h4>
-          <p v-html="locale === 'en' ? job.description : job.description_pt"></p>
-          <div class="flex flex-wrap mt-2">
+          <span class="text-xs font-black tracking-widest text-primary uppercase mb-4 block">
+            {{ locale === 'en' ? job.title : job.title_pt }}
+          </span>
+          <h3 class="text-2xl font-black mb-1 uppercase tracking-tight">
+            {{ job.company }}
+          </h3>
+          <h4 class="text-sm font-bold opacity-60 uppercase tracking-widest mb-6">
+            {{ locale === 'en' ? job.post : job.post_pt }}
+          </h4>
+          <p class="text-base opacity-80 mb-8" v-html="locale === 'en' ? job.description : job.description_pt"></p>
+          <div class="flex flex-wrap gap-2">
             <span
-              class="badge my-1"
-              v-for="(lang, index) in job.languages"
-              :key="index"
-              :title="lang.name"
+              class="px-3 py-1 text-[10px] font-black uppercase tracking-wider border rounded"
+              v-for="(lang, idx) in job.languages"
+              :key="idx"
               :style="getBadgeStyles(lang.color)"
             >
-              <v-icon :icon="lang.icon" size="14" />
               {{ lang.name }}
             </span>
           </div>
