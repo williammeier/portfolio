@@ -1,6 +1,15 @@
 {
   "projects": [
     {
+      "name": "AmeriPrev",
+      "name_pt": "Natours | Passeios incríveis para pessoas aventureiras",
+      "description": "AmeriPrev Private Insurance Agency of the City of Americana SP.",
+      "description_pt": "Instituto de Previdência Privada dos Servidores Municipais de Americana SP.",
+      "image_path": "projects/ameri-prev.png",
+      "stack": "PHP, Laravel, Livewire, Tailwind, Alpine.js, MySQL",
+      "preview_url": "https://ameriprev.com.br/"
+    },
+    {
       "name": "Music App",
       "name_pt": "Music App",
       "description": "Website for uploading and playing music.",
@@ -9,36 +18,6 @@
       "stack": "Vue.js, Tailwind, Firebase",
       "preview_url": "https://music-r5z3qt527-williammeier.vercel.app",
       "code_url": "https://github.com/williammeier/vue-music-app"
-    },
-    {
-      "name": "Natours | Exciting tours for adventurous people",
-      "name_pt": "Natours | Passeios incríveis para pessoas aventureiras",
-      "description": "Responsive page to tour and explore the nature.",
-      "description_pt": "Página responsiva para passear e explorar a natureza.",
-      "image_path": "projects/nature.png",
-      "stack": "HTML, Sass",
-      "preview_url": "https://williammeier.github.io/natours/",
-      "code_url": "https://github.com/williammeier/natours"
-    },
-    {
-      "name": "Nexter | Your home, your freedom",
-      "name_pt": "Nexter | Sua casa, sua liberdade",
-      "description": "Responsive page to list and seel homes.",
-      "description_pt": "Página responsiva para listagem e visualização de casas.",
-      "image_path": "projects/nexter.png",
-      "stack": "HTML, Css",
-      "preview_url": "https://williammeier.github.io/nexter/",
-      "code_url": "https://github.com/williammeier/nexter"
-    },
-    {
-      "name": "Trillo | Your all-in-one booking app",
-      "name_pt": "Trillo | Sua aplicação de reservas completa",
-      "description": "Responsive page to make reservations in hotels.",
-      "description_pt": "Página responsiva para fazer reservas em hotéis.",
-      "image_path": "projects/trillo.png",
-      "stack": "HTML, Sass",
-      "preview_url": "https://williammeier.github.io/trillo/",
-      "code_url": "https://github.com/williammeier/trillo"
     }
   ]
 }

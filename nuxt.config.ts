@@ -53,6 +53,7 @@ export default defineNuxtConfig({
     fallback: 'dark',
   },
   i18n: {
+    restructureDir: false,
     strategy: 'no_prefix',
     locales: [
       { code: 'en', file: 'en.json' },
